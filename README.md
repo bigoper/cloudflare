@@ -1,5 +1,5 @@
 # CloudFlare
-Setup a website under Cloudflare.com services. [NGINX, UBUNTU 16.04, HSTS, ECC]
+Setup a website under Cloudflare.com services. [NGINX, UBUNTU 16.04, HSTS, Railgun, ECC]
 
 ## TASKS
 ### 1 - WEB SERVER
@@ -7,7 +7,9 @@ Setup a website under Cloudflare.com services. [NGINX, UBUNTU 16.04, HSTS, ECC]
 - The landing page should be served through CloudFlare (need to signup for free account, convert to enterprise)
 - Make the origin server only available over IPv6 (Apache / Nginx config)
 
-> Attachment: index.php
+> Attachment: index.php (Nginx default-website index page)
+
+> Attachment: default (Nginx server-block)
 
 
 ### 2 - RAILGUN
