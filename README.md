@@ -7,6 +7,9 @@ Setup a website under Cloudflare.com services. [NGINX, UBUNTU 16.04, HSTS, ECC]
 - The landing page should be served through CloudFlare (need to signup for free account, convert to enterprise)
 - Make the origin server only available over IPv6 (Apache / Nginx config)
 
+> Attachment: index.php
+
+
 ### 2 - RAILGUN
 - Setup [Railgun](https://www.cloudflare.com/docs/railgun/) and confirm Railgun is working correctly.
   - (hint, you can use rg-diag which is installed with the railgun package)
@@ -23,6 +26,9 @@ Setup a website under Cloudflare.com services. [NGINX, UBUNTU 16.04, HSTS, ECC]
 - Create a script in the language of your choice (Bash, PHP, Ruby, Python, etc) 
   - Display HTTP response headers
   - Compare the HTTP response headers for an HTTP request going through CloudFlare versus going directly to your origin server.
+
+> Attachment: CloudFlare-RemoteServerTest.py
+
 
 Enjoy the the road, beware of the flare...
 
