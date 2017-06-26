@@ -1,22 +1,3 @@
-<?php
-if (!function_exists('getallheaders'))
-{
-        function getallheaders()
-        {
-                     $headers = '';
-             foreach ($_SERVER as $name => $value)
-             {
-                     if (substr($name, 0, 5) == 'HTTP_')
-                     {
-                             $headers[str_replace(' ', '-', ucwords(strtolower(str_replace('_', ' ', substr($name, 5)))))] = $value;
-                     }
-             }
-             return $headers;
-        }
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -47,12 +28,7 @@ if (!function_exists('getallheaders'))
 					$server_headers = $_SERVER;
                                         foreach ($_SERVER as $name => $value) {
                                             echo "<tr><td>$name</td><td>$value</td></tr>";
-                                        }
-
-                                    	//Additional headers
-                                    	//echo "<tr><td>HTTP_CF_CONNECTING_IP</td><td>".$_SERVER['HTTP_CF_CONNECTING_IP']."</td></tr>";
-                                    	//echo "<tr><td>REMOTE_ADDR</td><td>".$_SERVER['REMOTE_ADDR']."</td></tr>";
-                                    	//echo "<tr><td>HTTP_CF_IPCOUNTRY</td><td>".$_SERVER['HTTP_CF_IPCOUNTRY']."</td></tr>";                                 
+                                        }                                
                                         ?>
                                  </tbody>
                                 </table>
